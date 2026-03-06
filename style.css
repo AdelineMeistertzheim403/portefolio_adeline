@@ -1,0 +1,280 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+nav
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav a
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav ul 
+{
+    list-style-type: none;
+}
+
+.active {
+    background-color: #DF3F3F;
+    border-radius: 20px;
+  }
+
+nav li
+{
+    float: left;
+    width: 15%;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Dayrom', serif;
+    background-color: black;
+    border-radius: 20px;
+    border-right: 2px solid #bbb;
+}
+
+nav a 
+{
+    color: white;
+}
+
+nav ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a:hover
+{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+/* Header */
+
+header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+header span
+{
+    width: 750px;
+    background: linear-gradient(#DF3F3F, white) ;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 15px;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#logo img
+{
+    width: 150px;
+    height: 150px;
+}
+
+header h1
+{
+    font-family: 'Dayrom', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    text-align:     center; 
+}
+
+header h2
+{
+    font-family:'Dayrom', serif;
+    font-size: 1em;
+    margin: 0 0 0 10px;
+    font-weight: normal;
+    text-align:     center; 
+}
+
+
+/* Corps */
+
+section
+{
+    display: flex;
+}
+
+section h1
+{
+    background: url('images/traitrouge.PNG') repeat-x bottom;
+}
+
+h1
+{
+    margin-top: 20px;
+}
+
+body img { width: 100%;}
+footer img { width: auto;}
+
+[class*="col"] { 
+    margin-bottom: 20px;
+    margin-top: 20px;
+ }
+
+#memo
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+article
+{
+    margin-left: 20px;
+}
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+div
+{
+    margin-top: 20px;
+}
+
+table 
+{
+    margin-top: 20px;
+}
+
+
+form {
+    margin-top: 20px;
+    margin-left: 125px;
+    background-color:#FAFAFA;
+    padding:10px;
+    width:650px;
+    }
+   fieldset {
+    padding:0 20px 20px 20px;
+    margin-bottom:10px;
+    border:5px solid #DF3F3F;
+    border-radius: 15px;
+    }
+   legend {
+    color:#DF3F3F;
+    font-weight:bold
+    }
+   label {
+    margin-top:10px;
+    display:block;
+    }
+   label.inline {
+    display:inline;
+    margin-right:50px;
+    }
+   input, textarea{
+    background-color:#FFF3F3;
+    }
+   input, textarea {
+    padding:3px;
+    border:1px solid #F5C5C5;
+    border-radius:5px;
+    width:600px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+    }
+
+    input[type=submit]{
+        width:100px;
+        margin-left:5px;
+        box-shadow:1px 1px 1px #D83F3D;
+        cursor:pointer;
+        }
+
+        #pageListe.classAff {
+            background-color: #FAF2AD;
+            padding: 20px;
+            font-family: cursive;
+        }
+        
+        #pageListe.classAff ul {
+            margin: 10px 0px;
+            padding: 20px;
+            border-left: 4px double red;
+        }
+        
+        #pageListe.classAff li {
+            list-style-type: none;
+            margin: 0px -20px;
+            padding-left: 26px;
+            border-bottom: 1px solid blue;
+            line-height: 36px;
+            font-size: 24px;
+            font-family: cursive;
+        }
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:   url('images/separateur.png') repeat-x top;
+    background-size: 5px;
+    padding-top: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p
+{
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img
+{
+    display: flex;
+    width: 50px;
+    height: auto;
+    align-items: center;
+    background-color: red;
+    border-radius: 5%;
+}
